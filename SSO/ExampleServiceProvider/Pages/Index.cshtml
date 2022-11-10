@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<div class="jumbotron">
+    <h1 class="display-4">Soft1 Service Provider</h1>
+    <p class="lead">
+        This example demonstrates using the ComponentSpace SAML v2.0 library to enable SAML single sign-on
+    </p>
+     <p><a asp-area="" asp-controller="Saml" asp-action="InitiateSingleSignOn" class="btn btn-primary btn-lg"><i class="aad-icon"></i>SSO with Azure AD</a></p>
+    
+</div>
+
